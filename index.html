@@ -3,8 +3,8 @@
     <body>
         <header>
             <h1>Why I switched from Arch Linux to Fedora Linux</h1>
-            <p>Arch Linux was my first permanent Linux os, I used it because I kept hearing it on social media. I didn't install it normally, though, I used archinstall.
-                The reason basically is because an update broke my out of tree driver, but I do always have otehr issues with Arch too.
+            <p>Arch Linux was my first permanent Linux os, I used it because I kept hearing it on social media. I didn't install it normally, though, I used <code>archinstall</code>.
+                The reason for switching to Fedora basically is because an update broke my out of tree aic8800d80 usb wifi driver, but I did always have other issues with Arch too.
             </p>
         </header>
         <main>
@@ -12,8 +12,24 @@
             <p>
                 So, I ran checkupdates and saw that some linux firmware updates and some others are out, so of course I 
                 ran sudo pacman -Syu. When i rebooted my aic8800d80 usb wifi kept saying my wifi password was wrong. THat took me 2 days to fix
+                
                 and the most unexpected thing was the fix. First I tried downgrading, but that didn't work. Than I tried many things,
                 but they were also in vain. The thing that fixed my wifi was running <code>nmcli connection modify</code> then something after it.
+                
+            </p>
+            
+            
+            <h2>Other things that were also pushing me away from Arch</h2>
+            <p align="right"><em><strong>The Arch updates that broke my wifi</strong></em> </p>
+            <img src="assets/ArchBreakUpdates.png" width="20%" align="right" alt="My Arch updates that broke my wifi">
+            <p>I was running Arch on a pc that I daily drive, and that ain't good. I always had to scroll the archlinux
+                subreddit before a Linux kernal update because I couldn't afford breaking my system. Another thing was that
+                clicking links in many apps wouldn't open them or instead save to my cache, which was really annoying.
+            </p>
+            <h2>Why I specifically chose Fedora Linux</h2>
+            <p>You're probably thinking why I specifically chose Fedora, that is because mainly of its update system.
+                This is in between Debian, which takes years to update to update to newer versions, and Arch, which is almost always unstable and updates almost every day.
+                
             </p>
         </main>
     </body>
